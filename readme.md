@@ -30,7 +30,7 @@ More expansion is commng so stay tuned to the repo! Star and watch for updates!
    ```
 3. Install the OpenAI package:
    ```bash
-   pip install openai
+   pip install openai -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
    ```
 
 ### Initial Setup

@@ -1,6 +1,6 @@
 import asyncio
 import json
-from openai._client import AsyncOpenAI
+from openai import AsyncOpenAI
 import gpt3_tokenizer
 
 class OAI_Agent():

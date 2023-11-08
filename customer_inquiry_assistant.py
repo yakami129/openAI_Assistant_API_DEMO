@@ -1,21 +1,24 @@
 import asyncio
+import os
 from agent_class import OAI_Agent
+from dotenv import load_dotenv
+load_dotenv();
 
 
-api_key="APIKEY"
-organization_id="ORGID"
+api_key=os.environ.get("OPENAI_API_KEY")
+organization_id=os.environ.get("OPENAI_ORG_ID")
 
 client = OAI_Agent(api_key=api_key, organization_id=organization_id)
 
 json_file = 'thread_data.json'
 agent_file = 'agent_data.json'
 
-thread_name = "My_First_Chat
+thread_name = "My_First_Chat"
 Customer_Service_Assistant = {
     "name":"Customer Service Assistant",
     "instructions":"You are a customer service assistant. Answer user queries courteously and accurately.",
     "tools":[{"type": "retrieval"}],
-    "model":"gpt-4-1106-preview"
+    "model":"gpt-3.5-turbo-16k"
 }
 
 
